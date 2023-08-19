@@ -2,4 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@font-face {
+  font-family: "gothamRounded";
+  src: url("./assets/fonts/Gotham-Rounded-Light.woff") format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "gothamRounded";
+  src: url("./assets/fonts/Gotham-Rounded-Medium.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "gothamRounded";
+  src: url("./assets/fonts/Gotham-Rounded-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "cycloneLayers";
+  src: url("./assets/fonts/Gotham-Rounded-Bold.woff") format("woff");
+}
+
+* {
+  font-family: "gothamRounded", sans-serif;
+}
