@@ -25,3 +25,15 @@
 * {
   font-family: "gothamRounded", sans-serif;
 }
+
+@layer base {
+  button.bg-c3 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  }
+}
+
+@layer utilities {
+  .btn-transparent {
+    @apply bg-transparent hover:bg-transparent;
+  }
+}

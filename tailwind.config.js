@@ -19,6 +19,7 @@ export default {
       },
       fontFamily: {
         montserrat: "montserrat,sans,serif",
+        cycloneLayers: "cycloneLayers,sans,serif",
       },
     },
     screens: {

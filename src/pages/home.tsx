@@ -94,8 +94,7 @@ export default function Home() {
                 <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
               </svg>
             </label>
-            {/* LOGO */}
-            <img src={crunchLabsLogo} className="h-8 sm:h-10 mr-3" alt="C" />
+
             {/* SM: NAVBAR DROPDOWN MENU */}
             <motion.div
               className="absolute top-[70px] left-0 bottom-0 w-full overflow-auto bg-white"
@@ -127,6 +126,7 @@ export default function Home() {
                 </DropdownLink>
               </ul>
             </motion.div>
+
             {/* SM: MORE BTN */}
             <motion.div
               className="absolute top-[70px] left-0 bottom-0 h-screen w-full overflow-hidden bg-white"
@@ -160,6 +160,9 @@ export default function Home() {
                 <DropdownLink className="items-center">FAQ</DropdownLink>
               </ul>
             </motion.div>
+
+            {/* LOGO */}
+            <img src={crunchLabsLogo} className="h-8 mr-3" alt="C" />
 
             {/* XL NAVIGATION MENU */}
             <div className="hidden xl:flex gap-4 items-center bg-red-500a">
@@ -236,12 +239,11 @@ export default function Home() {
             </div>
 
             {/* USER AND SHOPPING CART CONTAINER */}
-            <div className="flex items-center md:gap-6 xl:gap-10 ms-auto xl:ms-0">
+            <div className="flex items-center gap-3 md:gap-6 xl:gap-10 me-2 ms-auto xl:ms-0">
               {/* USER PROFILE */}
-
               <button className="btn p-0 bg-transparent hover:bg-transparent">
                 <svg
-                  className="w-10 h-10 me-2"
+                  className="w-8 h-8 me-2"
                   stroke="#fff"
                   fill="#fff"
                   strokeWidth={-10}
@@ -259,12 +261,11 @@ export default function Home() {
                   className="drawer-toggle"
                 />
                 <div className="drawer-content">
-                  {/* Page content here */}
                   <label
                     htmlFor="my-drawer"
                     className="drawer-button btn p-0 hover:bg-transparent bg-c1 ">
                     <svg
-                      className="w-9 h-9"
+                      className="w-8 h-8"
                       stroke="#fff"
                       fill="#fff"
                       strokeWidth={0}
@@ -272,20 +273,53 @@ export default function Home() {
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
                     </svg>
-                    <span className="text-white">(0)</span>
+                    <span className="ms-[-7px] text-white">(0)</span>
                   </label>
                 </div>
                 <div className="drawer-side">
                   <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                  <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                    {/* Sidebar content here */}
-                    <li>
-                      <a>Sidebar Item 1</a>
-                    </li>
-                    <li>
-                      <a>Sidebar Item 2</a>
-                    </li>
-                  </ul>
+                  <div className="menu py-2 px-4 w-80 min-h-full bg-white text-base-content">
+                    <div className="flex justify-between items-center">
+                      <h1 className="font-bold text-xl text-c1">CART</h1>
+                      <label
+                        htmlFor="my-drawer"
+                        className="drawer-button btn p-0 btn-transparent">
+                        <svg
+                          className="w-6 h-6"
+                          stroke="#000"
+                          fill="#000"
+                          strokeWidth={0}
+                          viewBox="0 0 1024 1024"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z" />
+                        </svg>
+                      </label>
+                    </div>
+                    <div className="flex flex-col items-center text-c1">
+                      <svg
+                        className="w-16 h-16"
+                        stroke="#00416c"
+                        fill="#00416c"
+                        strokeWidth={0}
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                        </g>
+                      </svg>
+                      <h1 className="my-4 font-bold text-xl font-cycloneLayers">
+                        YOUR CART IS EMPTY
+                      </h1>
+                      <a href="#" className="underline">
+                        Continue shopping
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -299,7 +333,13 @@ export default function Home() {
     <>
       <Navbar />
       <main className="grid">
-        <h1 className="text-black">Hello worldsadfkjsadflk asdfl j</h1>
+        {/* <video className="w-full h-screen" loop autoPlay>
+          <source src="../assets/Video/heroVideo.mp4" type="video/mp4" />
+        </video> */}
+        <video width="320" height="240" controls>
+          <source src="../assets/Video/heroVideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </main>
     </>
   );
