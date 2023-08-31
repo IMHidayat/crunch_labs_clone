@@ -50,7 +50,7 @@ export default function Home() {
       return (
         <a
           href="#"
-          className={`btn bg-transparent hover:bg-transparent text-white hover:text-c4 ${p.className}`}>
+          className={`btn text-xs text-white hover:text-c4 bg-transparent hover:bg-transparent ${p.className}`}>
           {p.children}
         </a>
       );
@@ -59,7 +59,7 @@ export default function Home() {
     return (
       <>
         <nav className="bg-c1">
-          <div className="flex mx-auto p-2 xl:py-0 xl:px-10 flex-wrap items-center xl:justify-between">
+          <div className="flex mx-auto p-2 xl:py-0 xl:px-8 flex-wrap items-center xl:justify-between">
             {/* NAVBAR MENU BUTTON */}
             <label className="btn xl:hidden btn-square swap swap-rotate sm:me-2 bg-c1 hover:bg-transparent">
               {/* this hidden checkbox controls the state */}
@@ -168,28 +168,13 @@ export default function Home() {
             <div className="hidden xl:flex gap-4 items-center bg-red-500a">
               <NavLink className="">SUBSCRIBE</NavLink>
               <NavLink className="">EDUCATORS</NavLink>
-              {/* <div className="dropdown dropdown-hover">
-                <label tabIndex={0} className="btn m-1">
-                  Hover
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li>
-                    <a>Item 1</a>
-                  </li>
-                  <li>
-                    <a>Item 2</a>
-                  </li>
-                </ul>
-              </div> */}
               <div className="dropdown dropdown-hover">
                 <motion.label
                   initial="default"
                   animate="default"
                   whileHover="hover"
                   tabIndex={0}
-                  className="btn h-20 rounded-none text-white bg-transparent hover:bg-transparent">
+                  className="btn h-16 text-xs rounded-none text-white bg-transparent hover:bg-transparent">
                   More
                   <motion.svg
                     variants={rotate180}
@@ -336,9 +321,11 @@ export default function Home() {
         {/* <video className="w-full h-screen" loop autoPlay>
           <source src="../assets/Video/heroVideo.mp4" type="video/mp4" />
         </video> */}
-        <video width="320" height="240" controls>
-          <source src="../assets/Video/heroVideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+        <video
+          className="w-full h-[40rem] bg-gray-500 object-cover"
+          autoPlay
+          loop>
+          <source src="" type="video/mp4" />
         </video>
       </main>
     </>
